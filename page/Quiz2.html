@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deedad</title>
+    <link rel="stylesheet" href="../src/styles/Quizstyle.css" />
+    <link rel="icon" type="imag/png" href="../assets/image/logo.png" />
+  </head>
+  <body>
+    <div class="pinball pinball1"></div>
+    <div class="pinball pinball2"></div>
+    <div class="pinball pinball3"></div>
+    <div class="pinball pinball4"></div>
+    <div class="pinball pinball5"></div>
+    <div class="pinball pinball6"></div>
+    <div class="pinball pinball7"></div>
+    <div class="pinball pinball8"></div>
+    <div class="pinball pinball9"></div>
+    <div class="pinball pinball10"></div>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <img src="../assets/image/logo.png" alt="" class="deedadimg" />
+        <h1>English Quiz</h1>
+        <img src="../assets/image/logo.png" alt="" class="deedadimg" />
+      </div>
+      <div id="question-container" class="fade-in">
+        <p id="question"></p>
+        <div id="options-container"></div>
+      </div>
+      <p id="feedback"></p>
+      <p id="timer">Time left: <span id="countdown">10</span> seconds</p>
+      <button id="next-button" style="display: none">Next Question</button>
+      <button id="back-button" style="display: none">Back</button>
+    </div>
+
+    <script src="../src/js/QuizScript2.js"></script>
+    <script src="../src/js/pinball.js"></script>
+  </body>
+</html>

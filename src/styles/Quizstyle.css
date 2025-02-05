@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../../assets/image/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.quiz-container {
+  background-image: url(../../assets/image/cardBg.jpg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+  filter: drop-shadow(0 0 0.5rem #1797ff);
+  z-index: 2;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.quiz-header h1 {
+  margin-bottom: 20px;
+}
+
+.deedadimg {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: rotate 0.5s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 1rem #1797ff);
+}
+
+#question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.option:hover {
+  background-color: #0056b3;
+}
+
+.correct {
+  background-color: #28a745 !important;
+}
+
+.incorrect {
+  background-color: #dc3545 !important;
+}
+
+#feedback {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #fff;
+}
+
+#timer {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  margin: 20px 0;
+}
+
+#next-button {
+  background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
+  color: #000;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+  padding: 0px 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#next-button:hover {
+  background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
+  box-shadow: 0 3px 9px #25b981;
+}
+
+.back-button {
+  background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
+  color: #000;
+  font-weight: 600;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 5px;
+  border: none;
+  padding: 0px 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Jarak dengan elemen di atasnya */
+}
+
+.back-button:hover {
+  background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
+  box-shadow: 0 3px 9px #25b981;
+}
+
+/* Efek animasi */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+/** Efek Mafaza */
+.pinball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/image/logo.png");
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+  animation: rotateImg 3s linear infinite;
+  filter: drop-shadow(0px 0px 10px red) drop-shadow(0px 0px 20px orange)
+    drop-shadow(0px 0px 30px yellow);
+}
+
+/* Mengatur posisi dan kecepatan pinball */
+.pinball1 {
+  top: 10%;
+  left: 10%;
+}
+
+.pinball2 {
+  top: 30%;
+  left: 20%;
+}
+
+.pinball3 {
+  top: 50%;
+  left: 30%;
+}
+
+.pinball4 {
+  top: 70%;
+  left: 40%;
+}
+
+.pinball5 {
+  top: 90%;
+  left: 50%;
+}
+
+.pinball6 {
+  top: 89%;
+  left: 60%;
+}
+
+.pinball7 {
+  top: 35%;
+  left: 70%;
+}
+
+.pinball8 {
+  top: 80%;
+  left: 15%;
+}
+
+.pinball9 {
+  top: 65%;
+  left: 10%;
+}
+
+.pinball10 {
+  top: 100%;
+  left: 30%;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatImg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes circleAnimate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
