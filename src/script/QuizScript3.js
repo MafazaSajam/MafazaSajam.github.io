@@ -205,7 +205,7 @@ function showResults() {
   backButton.textContent = "Back to Homepage";
   backButton.classList.add("back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "../index.html"; // Ganti "index.html" dengan halaman utama Anda
+    window.location.href = "../index.html";
   });
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }

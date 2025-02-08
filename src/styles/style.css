@@ -279,6 +279,7 @@ img.moon-light {
 .img-questionnaire {
   position: relative;
   width: 600px;
+  z-index: 3;
 }
 
 .circle-animate {
@@ -312,6 +313,7 @@ img.moon-light {
 
 .text-questionnaire {
   color: #fff;
+  z-index: 3;
 }
 
 .text-questionnaire h3 {
@@ -367,9 +369,9 @@ header.sticky {
 /* Meteor Mafaza */
 .meteor {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  background-image: url("../../assets/image/logo.png");
+  width: 100px;
+  height: 100px;
+  background-image: url("../../assets/image/meteor.png");
   background-size: cover;
   animation: meteor 10s linear infinite;
   opacity: 0.8;
@@ -378,40 +380,47 @@ header.sticky {
 
 /* Mengatur posisi dan kecepatan meteor */
 .meteor1 {
-  top: 10%;
+  top: 110%;
   left: -30px;
-  animation-duration: 12s;
+  animation-duration: 3s;
+  z-index: 2;
 }
 .meteor2 {
-  top: 40%;
+  top: 120%;
   left: -50px;
-  animation-duration: 14s;
+  animation-duration: 4s;
+  z-index: 2;
 }
 .meteor3 {
-  top: 70%;
+  top: 180%;
   left: -80px;
-  animation-duration: 9s;
+  animation-duration: 2s;
+  z-index: 2;
 }
 
 .meteor4 {
-  top: 20%;
+  top: 200%;
   left: -100px;
-  animation-duration: 7s;
+  animation-duration: 4.5s;
+  z-index: 2;
 }
 
 .meteor5 {
-  top: 50%;
+  top: 150%;
   left: -120px;
   animation-duration: 5s;
+  z-index: 2;
 }
 
 /* Animasi bergerak meteor dari kiri ke kanan */
 @keyframes meteor {
   0% {
-    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0) rotateZ(0) scale(1);
+    opacity: 1;
   }
   100% {
     transform: translateX(100vw) translateY(100vh);
+    opacity: 1;
   }
 }
 
