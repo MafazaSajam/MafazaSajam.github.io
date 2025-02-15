@@ -6,9 +6,9 @@ const questions = [
       "The book, which is lying on the table, belongs to Sarah.",
       "The book lying on the table belongs to Sarah.",
       "The book which lying on the table belongs to Sarah.",
-      "The book is lying on the table belongs to Sarah.",
+      "The book is lying on the table belongs to Sarah."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Identify the sentence with proper parallel structure.",
@@ -16,9 +16,9 @@ const questions = [
       "The professor explained the assignment, gave examples, and answering questions.",
       "The professor explained the assignment, gave examples, and answered questions.",
       "The professor explaining the assignment, giving examples, and answered questions.",
-      "The professor explained the assignment, give examples, and answered questions.",
+      "The professor explained the assignment, give examples, and answered questions."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question:
@@ -27,9 +27,9 @@ const questions = [
       "Each of the students were assigned a different topic.",
       "Each of the students was assigned a different topic.",
       "Each of the student was assigned a different topic.",
-      "Each of the students is assigning a different topic.",
+      "Each of the students is assigning a different topic."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question:
@@ -38,9 +38,9 @@ const questions = [
       "Had he known about the meeting, he would attend.",
       "Had he known about the meeting, he would have attended.",
       "Had he knew about the meeting, he would have attended.",
-      "Had he know about the meeting, he would attend.",
+      "Had he know about the meeting, he would attend."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Which sentence uses the correct form of a phrasal verb?",
@@ -48,9 +48,9 @@ const questions = [
       "She broke up the project after receiving new instructions.",
       "She broke down the project into smaller parts for better understanding.",
       "She broke out the project for further investigation.",
-      "She broke through the project after receiving updates.",
+      "She broke through the project after receiving updates."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Which sentence correctly demonstrates the use of a noun clause?",
@@ -58,9 +58,9 @@ const questions = [
       "I don’t know what time the meeting starts.",
       "I don’t know the time the meeting start.",
       "I don’t know what is the time the meeting starts.",
-      "I don’t know when does the meeting starts.",
+      "I don’t know when does the meeting starts."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Which sentence uses a correct advanced modal structure?",
@@ -68,9 +68,9 @@ const questions = [
       "She could have been waiting for the train when we arrived.",
       "She must have been waited for the train when we arrived.",
       "She should have waited for the train when we arrive.",
-      "She could been waiting for the train when we arrive.",
+      "She could been waiting for the train when we arrive."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question:
@@ -79,9 +79,9 @@ const questions = [
       "He hit the nail in the head with his solution.",
       "He hit the nail on the head with his solution.",
       "He hit the nail to the head with his solution.",
-      "He hit the nail under the head with his solution.",
+      "He hit the nail under the head with his solution."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question:
@@ -90,9 +90,9 @@ const questions = [
       "Not only did she enjoy the concert, but she also singing along.",
       "Not only did she enjoy the concert, but she also sang along.",
       "Not only did she enjoy the concert, but also sang along.",
-      "Not only she enjoyed the concert, but she also sang along.",
+      "Not only she enjoyed the concert, but she also sang along."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Which sentence demonstrates proper use of an appositive phrase?",
@@ -100,10 +100,10 @@ const questions = [
       "My brother, who is an engineer, lives in New York.",
       "My brother, an engineer, lives in New York.",
       "My brother an engineer, lives in New York.",
-      "My brother, who an engineer, lives in New York.",
+      "My brother, who an engineer, lives in New York."
     ],
-    answer: 1,
-  },
+    answer: 1
+  }
 ];
 
 let currentQuestionIndex = 0;
@@ -219,7 +219,7 @@ function showResults() {
   backButton.textContent = "Back to Homepage";
   backButton.classList.add("back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   });
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }

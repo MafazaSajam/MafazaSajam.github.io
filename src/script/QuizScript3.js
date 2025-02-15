@@ -5,9 +5,9 @@ const questions = [
       "He had been running for an hour before he stopped.",
       "He has been running for an hour before he stopped.",
       "He have been running for an hour before he stopped.",
-      "He had run for an hour before he stopped.",
+      "He had run for an hour before he stopped."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Identify the sentence written in the future perfect tense.",
@@ -15,15 +15,15 @@ const questions = [
       "By next year, I will have completed my degree.",
       "By next year, I complete my degree.",
       "By next year, I will completing my degree.",
-      "By next year, I will be complete my degree.",
+      "By next year, I will be complete my degree."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question:
       "Choose the correct form to complete the sentence: 'By the time we arrived, the movie ______.'",
     options: ["had started", "was starting", "starts", "will start"],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Which sentence uses the correct conditional type 2?",
@@ -31,9 +31,9 @@ const questions = [
       "If I had more time, I would travel the world.",
       "If I have more time, I would travel the world.",
       "If I have more time, I will travel the world.",
-      "If I had more time, I will travel the world.",
+      "If I had more time, I will travel the world."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Select the sentence with correct subject-verb agreement.",
@@ -41,14 +41,14 @@ const questions = [
       "Neither of the boys are going to the party.",
       "Neither of the boys is going to the party.",
       "Neither of the boys were going to the party.",
-      "Neither of the boys be going to the party.",
+      "Neither of the boys be going to the party."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "What is the correct past participle of 'lie' (to recline)?",
     options: ["lay", "lain", "lied", "lays"],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Which sentence uses passive voice correctly?",
@@ -56,9 +56,9 @@ const questions = [
       "The cake was baked by my grandmother.",
       "The cake baked by my grandmother.",
       "The cake is baking by my grandmother.",
-      "The cake was bake by my grandmother.",
+      "The cake was bake by my grandmother."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Choose the correct sentence using conditional type 1.",
@@ -66,9 +66,9 @@ const questions = [
       "If you study hard, you will pass the exam.",
       "If you studied hard, you will pass the exam.",
       "If you had studied hard, you will pass the exam.",
-      "If you study hard, you would pass the exam.",
+      "If you study hard, you would pass the exam."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Which of the following contains an example of an infinitive?",
@@ -76,9 +76,9 @@ const questions = [
       "She likes to swim in the ocean.",
       "Swimming in the ocean is fun.",
       "She swam in the ocean yesterday.",
-      "She has swum in the ocean before.",
+      "She has swum in the ocean before."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Identify the sentence with correct parallel structure.",
@@ -86,10 +86,10 @@ const questions = [
       "He likes reading, writing, and to paint.",
       "He likes to read, writing, and painting.",
       "He likes reading, writing, and painting.",
-      "He likes to read, to writing, and to painting.",
+      "He likes to read, to writing, and to painting."
     ],
-    answer: 2,
-  },
+    answer: 2
+  }
 ];
 
 let currentQuestionIndex = 0;
@@ -205,7 +205,7 @@ function showResults() {
   backButton.textContent = "Back to Homepage";
   backButton.classList.add("back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   });
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }

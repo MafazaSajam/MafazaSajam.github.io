@@ -5,41 +5,41 @@ const questions = [
       "What do you think about hiring a taxi?",
       "OK, but let me ask my mom first.",
       "Do you mind if i ride it?",
-      "So, what's your idea?.",
+      "So, what's your idea?."
     ],
-    answer: 1,
+    answer: 1
   },
   {
     question: "Rafi and Mafaza get new chance, ...",
     options: ["Doesn't they?", "Aren't they?", "Do they?", "Don't they?"],
-    answer: 3,
+    answer: 3
   },
   {
     question: "Jakarta is still our capital, ........?",
     options: ["Is it", "Does it", "Isn,t it", "Don,t it"],
-    answer: 2,
+    answer: 2
   },
   {
     question: "She could write beautiful poems, ...........?",
     options: ["Could She", "Couldn't she", "Can She", "Can't she"],
-    answer: 1,
+    answer: 1
   },
   {
     question: "The bicycle is not here anymore; it must have....",
     options: ["took away", "taken away", "been taking away", "been taken away"],
-    answer: 3,
+    answer: 3
   },
   {
     question:
       "Buyer : I want the toy car displayed in the window yesterday. \n Shopkeeper: I'm sorry, it ......",
     options: ["has sold", "has been sold", "had been selling", "had sold"],
-    answer: 1,
+    answer: 1
   },
   {
     question:
       "Our house will................by our neighbour when we are away.",
     options: ["Kept", "Be kept", "Keeping", "Be keeping"],
-    answer: 1,
+    answer: 1
   },
   {
     question:
@@ -48,9 +48,9 @@ const questions = [
       "People polluted the river with rubbish.",
       "Waste material has not been collected.",
       "Fikry warned people not to throw rubbish.",
-      "Fikry thinks exactly the same way.",
+      "Fikry thinks exactly the same way."
     ],
-    answer: 0,
+    answer: 0
   },
   {
     question:
@@ -59,16 +59,16 @@ const questions = [
       "Could you help me to get",
       "Shall I have",
       "May I offer help to get",
-      "Would you like me to get you",
+      "Would you like me to get you"
     ],
-    answer: 3,
+    answer: 3
   },
   {
     question:
       "The heat causes deeper water to boil much more violently.\nThe heat creates jets of steam and fountains of hot water.\n----------\nThe appropriate conjunction to combine the sentences is ....",
     options: ["but", "and", "so that", "either"],
-    answer: 1,
-  },
+    answer: 1
+  }
 ];
 
 let currentQuestionIndex = 0;
@@ -184,7 +184,7 @@ function showResults() {
   backButton.textContent = "Back to Homepage";
   backButton.classList.add("back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   });
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }

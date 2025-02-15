@@ -3,12 +3,12 @@ const questions = [
     question:
       "The Purpose of narrative text is ....... the reader with a story",
     options: ["to amuse", "to inform", "to disrupt", "to advise"],
-    answer: 0,
+    answer: 0
   },
   {
     question: "Fairy tales is story which relates much with ....things.",
     options: ["place", "belief", "magic", "nature"],
-    answer: 2,
+    answer: 2
   },
   {
     question:
@@ -17,9 +17,9 @@ const questions = [
       "I don't know where I'm going.",
       "This is not your business.",
       "I have nothing to do.",
-      "I'm thinking of going to Bali.",
+      "I'm thinking of going to Bali."
     ],
-    answer: 3,
+    answer: 3
   },
   {
     question:
@@ -28,31 +28,31 @@ const questions = [
       "He totally understands",
       "Do you think that",
       "In my opinion",
-      "You can't believe",
+      "You can't believe"
     ],
-    answer: 2,
+    answer: 2
   },
   {
     question: "My Brother lives .....Bandung",
     options: ["At", "In", "On", "Within"],
-    answer: 1,
+    answer: 1
   },
   {
     question: "The party will be held .......Sunday, June 18, at 08.00 pm.",
     options: ["At", "To", "On", "In"],
-    answer: 2,
+    answer: 2
   },
   {
     question:
       "Nadia told ....that you would like to have more pen pals from Japan.",
     options: ["Me", "I", "My", "Mine"],
-    answer: 0,
+    answer: 0
   },
   {
     question:
       "Manaan has several pen pals from India. He writes to ..... via email every week.",
     options: ["Them", "They", "Their", "Theirs"],
-    answer: 0,
+    answer: 0
   },
   {
     question:
@@ -61,16 +61,16 @@ const questions = [
       "I keep in touch",
       "They keep in touch",
       "She keep in touch",
-      "We keep in touch",
+      "We keep in touch"
     ],
-    answer: 3,
+    answer: 3
   },
   {
     question:
       "Yafa often tells Yafi about her rehearsal. .....joins a choir club in her school.?",
     options: ["She", "He", "His", "Her"],
-    answer: 1,
-  },
+    answer: 1
+  }
 ];
 
 let currentQuestionIndex = 0;
@@ -186,7 +186,7 @@ function showResults() {
   backButton.textContent = "Back to Homepage";
   backButton.classList.add("back-button");
   backButton.addEventListener("click", () => {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   });
   optionsContainer.appendChild(backButton); // Menampilkan tombol "Back" di bawah hasil
 }
