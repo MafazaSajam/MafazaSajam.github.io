@@ -2,38 +2,60 @@
 <html lang="en" translate="no">
   <head>
     <meta charset="UTF-8" />
+    <!-- Mengatur karakter encoding untuk dokumen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mengatur viewport untuk responsivitas -->
     <title>Deedad</title>
+    <!-- Judul halaman -->
     <link rel="stylesheet" href="../styles/quizstyle.css" />
-    <link rel="icon" type="imag/png" href="../../assets/image/logo.png" />
+    <!-- Menghubungkan file CSS -->
+    <link rel="icon" type="image/png" href="../../assets/image/logo.png" />
+    <!-- Mengatur ikon untuk tab browser -->
   </head>
   <body>
+    <!-- Elemen pinball untuk animasi -->
+    <div class="pinball pinball1"></div>
+    <div class="pinball pinball2"></div>
+    <div class="pinball pinball3"></div>
+    <div class="pinball pinball4"></div>
+    <div class="pinball pinball5"></div>
+    <div class="pinball pinball6"></div>
+    <div class="pinball pinball7"></div>
+    <div class="pinball pinball8"></div>
+    <div class="pinball pinball9"></div>
+    <div class="pinball pinball10"></div>
+
     <div class="quiz-container">
-      <div class="pinball pinball1"></div>
-      <div class="pinball pinball2"></div>
-      <div class="pinball pinball3"></div>
-      <div class="pinball pinball4"></div>
-      <div class="pinball pinball5"></div>
-      <div class="pinball pinball6"></div>
-      <div class="pinball pinball7"></div>
-      <div class="pinball pinball8"></div>
-      <div class="pinball pinball9"></div>
-      <div class="pinball pinball10"></div>
+      <!-- Kontainer utama untuk kuis -->
+      <!-- Header kuis -->
       <div class="quiz-header">
         <img src="../../assets/image/logo.png" alt="" class="deedadimg" />
+        <!-- Gambar logo -->
         <h1>English Quiz</h1>
+        <!-- Judul kuis -->
         <img src="../../assets/image/logo.png" alt="" class="deedadimg" />
+        <!-- Gambar logo -->
       </div>
+
+      <!-- Kontainer untuk pertanyaan -->
       <div id="question-container" class="fade-in">
         <p id="question"></p>
+        <!-- Elemen untuk menampilkan pertanyaan -->
         <div id="options-container"></div>
+        <!-- Kontainer untuk opsi jawaban -->
       </div>
+
       <p id="feedback"></p>
+      <!-- Elemen untuk menampilkan umpan balik -->
       <p id="timer">Time left: <span id="countdown">10</span> seconds</p>
+      <!-- Elemen untuk menampilkan timer -->
       <button id="next-button" style="display: none">Next Question</button>
+      <!-- Tombol untuk pertanyaan berikutnya -->
       <button id="back-button" style="display: none">Back</button>
+      <!-- Tombol untuk kembali -->
     </div>
 
+    <!-- Menghubungkan file JavaScript -->
     <script src="../script/quizScript4.js"></script>
     <script src="../script/pinball.js"></script>
   </body>

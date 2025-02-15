@@ -1,5 +1,6 @@
+// Menunggu hingga seluruh konten halaman dimuat
 document.addEventListener("DOMContentLoaded", function () {
-  const pinballs = document.querySelectorAll(".pinball");
+  const pinballs = document.querySelectorAll(".pinball"); // Mengambil semua elemen dengan kelas "pinball"
 
   pinballs.forEach((pinball, index) => {
     // Mengatur posisi awal dan kecepatan setiap pinball
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pinball.style.left = `${xPos}px`;
     pinball.style.top = `${yPos}px`;
 
-    // Menggerakkan pinball dalam loop
+    // Fungsi untuk menggerakkan pinball dalam loop
     function movePinball() {
       // Memeriksa tabrakan dengan tepi layar
       if (xPos + pinball.offsetWidth >= window.innerWidth || xPos <= 0) {
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Menambahkan elemen span ke setiap pinball untuk animasi tambahan
 document.querySelectorAll(".pinball").forEach((pinball) => {
   for (let i = 1; i <= 3; i++) {
     let span = document.createElement("span");

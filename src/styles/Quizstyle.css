@@ -1,5 +1,7 @@
+/* Mengimpor font dari Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+/* Mengatur gaya untuk elemen body */
 body {
   font-family: "Outfit", sans-serif;
   margin: 0;
@@ -15,6 +17,7 @@ body {
   overflow: hidden;
 }
 
+/* Mengatur gaya untuk kontainer kuis */
 .quiz-container {
   background-image: url(../../assets/image/cardBg.jpg);
   padding: 20px;
@@ -28,6 +31,7 @@ body {
   z-index: 2;
 }
 
+/* Mengatur gaya untuk header kuis */
 .quiz-header {
   display: flex;
   justify-content: center;
@@ -36,10 +40,12 @@ body {
   flex-direction: row;
 }
 
+/* Mengatur gaya untuk elemen h1 dalam header kuis */
 .quiz-header h1 {
   margin-bottom: 20px;
 }
 
+/* Mengatur gaya untuk gambar deedad */
 .deedadimg {
   margin-left: 20px;
   margin-right: 20px;
@@ -50,6 +56,7 @@ body {
   filter: drop-shadow(0 0 1rem #1797ff);
 }
 
+/* Mengatur gaya untuk elemen pertanyaan */
 #question {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -57,6 +64,7 @@ body {
   user-select: none;
 }
 
+/* Mengatur gaya untuk tombol opsi */
 .option {
   display: block;
   width: 100%;
@@ -72,18 +80,22 @@ body {
   user-select: none;
 }
 
+/* Mengatur gaya untuk tombol opsi saat di-hover */
 .option:hover {
   background-color: #0056b3;
 }
 
+/* Mengatur gaya untuk opsi yang benar */
 .correct {
   background-color: #28a745 !important;
 }
 
+/* Mengatur gaya untuk opsi yang salah */
 .incorrect {
   background-color: #dc3545 !important;
 }
 
+/* Mengatur gaya untuk elemen umpan balik */
 #feedback {
   font-size: 1rem;
   font-weight: 500;
@@ -91,6 +103,7 @@ body {
   color: #fff;
 }
 
+/* Mengatur gaya untuk elemen timer */
 #timer {
   font-size: 1.2rem;
   font-weight: 400;
@@ -98,6 +111,7 @@ body {
   margin: 20px 0;
 }
 
+/* Mengatur gaya untuk tombol "Next" */
 #next-button {
   background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
   color: #000;
@@ -114,11 +128,13 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Mengatur gaya untuk tombol "Next" saat di-hover */
 #next-button:hover {
   background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
   box-shadow: 0 3px 9px #25b981;
 }
 
+/* Mengatur gaya untuk tombol "Back to Homepage" */
 .back-button {
   background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
   color: #000;
@@ -136,21 +152,23 @@ body {
   margin-top: 20px; /* Jarak dengan elemen di atasnya */
 }
 
+/* Mengatur gaya untuk tombol "Back to Homepage" saat di-hover */
 .back-button:hover {
   background: linear-gradient(180deg, #70efbf 0, #12bd7b 100%);
   box-shadow: 0 3px 9px #25b981;
 }
 
-/* Efek animasi */
+/* Efek animasi untuk fade-in */
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+/* Efek animasi untuk fade-out */
 .fade-out {
   animation: fadeOut 0.5s ease-in-out;
 }
 
-/** Efek Mafaza */
+/* Efek animasi untuk pinball */
 .pinball {
   position: absolute;
   width: 50px;
@@ -214,6 +232,8 @@ body {
   top: 100%;
   left: 30%;
 }
+
+/* Animasi untuk fade-in */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -225,6 +245,7 @@ body {
   }
 }
 
+/* Animasi untuk fade-out */
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -236,6 +257,7 @@ body {
   }
 }
 
+/* Animasi untuk mengapung */
 @keyframes floatImg {
   0% {
     transform: translateY(0);
@@ -248,6 +270,7 @@ body {
   }
 }
 
+/* Animasi untuk rotasi */
 @keyframes rotate {
   from {
     transform: rotate(-45deg);
@@ -257,6 +280,7 @@ body {
   }
 }
 
+/* Animasi untuk lingkaran */
 @keyframes circleAnimate {
   0% {
     transform: scale(1);
@@ -268,6 +292,7 @@ body {
   }
 }
 
+/* Animasi untuk rotasi gambar */
 @keyframes rotateImg {
   from {
     transform: rotate(0deg);

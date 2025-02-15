@@ -1,5 +1,7 @@
+/* Mengimpor font dari Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+/* Reset CSS dan pengaturan dasar */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@
   list-style: none;
 }
 
+/* Variabel CSS untuk warna dan ukuran */
 :root {
   --color-text: #cdc6c3;
   --hover-color: #70efbf;
@@ -16,6 +19,7 @@
   --index: calc(1vw + 1vh);
 }
 
+/* Mengatur gaya scrollbar */
 ::-webkit-scrollbar {
   height: 0;
   width: 0.5rem;
@@ -30,6 +34,7 @@
   border-radius: 5rem;
 }
 
+/* Mengatur gaya untuk elemen body */
 body {
   font-family: "Outfit", sans-serif;
   background-image: url(../../assets/image/background.jpg);
@@ -39,10 +44,12 @@ body {
   overflow-x: hidden;
 }
 
+/* Mengatur gaya untuk elemen anchor (link) */
 a {
   color: #ffffff;
 }
 
+/* Mengatur gaya untuk header */
 header {
   position: fixed;
   left: 0;
@@ -55,6 +62,7 @@ header {
   z-index: 1000;
 }
 
+/* Mengatur gaya untuk logo */
 .logo {
   display: flex;
   align-items: center;
@@ -71,6 +79,7 @@ header {
   filter: drop-shadow(0 0 0.5rem #1797ff);
 }
 
+/* Mengatur gaya untuk daftar navigasi */
 header .navlist {
   display: flex;
 }
@@ -112,11 +121,13 @@ header .navlist {
   border-bottom: 1px solid var(--hover-color);
 }
 
+/* Mengatur gaya untuk elemen di sisi kanan header */
 .right-side {
   display: flex;
   align-items: center;
 }
 
+/* Mengatur gaya untuk tombol deedad */
 .deedadBtn {
   background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
   height: 28px;
@@ -136,18 +147,21 @@ header .navlist {
   box-shadow: 0 3px 9px #25b981;
 }
 
+/* Mengatur gaya untuk ikon menu */
 #menu-icon {
   color: var(--hover-color);
   font-size: 2.5rem;
   display: none;
 }
 
+/* Mengatur gaya untuk elemen section */
 section {
   padding: 100px 12%;
 }
 
 /** Home CSS **/
 
+/* Mengatur gaya untuk gambar hero di halaman utama */
 .home-img img.hero {
   max-width: 100%;
   width: 400px;
@@ -155,6 +169,7 @@ section {
   animation: floatImg 4s ease-in-out infinite;
 }
 
+/* Mengatur gaya untuk elemen rotasi bumi */
 .earth-rotate {
   width: 100%;
 }
@@ -170,6 +185,7 @@ section {
   animation: rotate 300s linear infinite;
 }
 
+/* Mengatur gaya untuk elemen home */
 .home {
   height: 100vh;
   display: grid;
@@ -179,6 +195,7 @@ section {
   width: 100%;
 }
 
+/* Mengatur gaya untuk teks di halaman utama */
 .home-text h1,
 h2 {
   font-size: calc(var(--index) * 2);
@@ -197,6 +214,7 @@ span {
   color: var(--hover-color);
 }
 
+/* Mengatur gaya untuk gambar di halaman utama */
 .home-img {
   position: relative;
 }
@@ -210,6 +228,7 @@ img.moon-light {
 
 /** Quiz CSS */
 
+/* Mengatur gaya untuk daftar kuis */
 .quiz-list {
   position: relative;
 }
@@ -223,6 +242,7 @@ img.moon-light {
   position: relative;
 }
 
+/* Mengatur gaya untuk kotak kuis */
 .container .quiz-box {
   width: 200px;
   padding: 2rem 1.5rem 2rem;
@@ -244,6 +264,7 @@ img.moon-light {
   border-radius: 50%;
 }
 
+/* Mengatur gaya untuk judul kuis */
 .container .quiz-box h2 {
   color: var(--hover-color);
   font-size: 1.5rem;
@@ -251,12 +272,14 @@ img.moon-light {
   margin: 0;
 }
 
+/* Mengatur gaya untuk paragraf di kotak kuis */
 .quiz-box p {
   color: #fff;
   line-height: 1.5rem;
   font-size: 0.9rem;
 }
 
+/* Mengatur gaya untuk tombol deedad di kotak kuis */
 .quiz-box .deedadBtn {
   margin-top: 1rem;
   height: 32px;
@@ -268,6 +291,7 @@ img.moon-light {
 
 /** Questionnaire CSS */
 
+/* Mengatur gaya untuk elemen questionnaire */
 .questionnaire {
   display: flex;
   align-items: center;
@@ -276,12 +300,14 @@ img.moon-light {
   gap: 1rem;
 }
 
+/* Mengatur gaya untuk gambar questionnaire */
 .img-questionnaire {
   position: relative;
   width: 600px;
   z-index: 3;
 }
 
+/* Mengatur gaya untuk animasi lingkaran */
 .circle-animate {
   position: absolute;
   top: 30%;
@@ -311,6 +337,7 @@ img.moon-light {
   animation: floatImg 4s ease-in-out infinite;
 }
 
+/* Mengatur gaya untuk teks questionnaire */
 .text-questionnaire {
   color: #fff;
   z-index: 3;
@@ -332,6 +359,7 @@ img.moon-light {
 
 /** Header Sticky CSS */
 
+/* Mengatur gaya untuk header sticky */
 header.sticky {
   background: rgba(0, 0, 0, 0.7);
   padding: 9px 12%;
@@ -340,6 +368,7 @@ header.sticky {
 
 /** scroll animation */
 
+/* Mengatur gaya untuk animasi scroll */
 .scroll-left {
   opacity: 0;
   transform: translateX(40px);
@@ -366,7 +395,8 @@ header.sticky {
   transform: translateX(0);
   transition: all 2s;
 }
-/* Meteor Mafaza */
+
+/* Mengatur gaya untuk meteor */
 .meteor {
   position: absolute;
   width: 100px;
@@ -424,6 +454,7 @@ header.sticky {
   }
 }
 
+/* Animasi untuk rotasi */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -432,6 +463,8 @@ header.sticky {
     transform: rotate(360deg);
   }
 }
+
+/* Animasi untuk mengapung */
 @keyframes floatImg {
   0% {
     transform: translateY(0);
@@ -444,6 +477,7 @@ header.sticky {
   }
 }
 
+/* Animasi untuk lingkaran */
 @keyframes circleAnimate {
   100% {
     opacity: 0;
